@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.2">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
@@ -17,27 +17,27 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"hutaox.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.29.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"hutaox.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.29.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
     <meta name="description" content="一、实现步骤概览">
 <meta property="og:type" content="article">
 <meta property="og:title" content="通过云主机远程登录（ssh）树莓派">
-<meta property="og:url" content="https://hutaox.com/blog/2020/07/16/autossh-on-pi/index.html">
+<meta property="og:url" content="https://hutaox.com/blog/2020/07/15/autossh-on-pi/index.html">
 <meta property="og:site_name" content="积跬步">
 <meta property="og:description" content="一、实现步骤概览">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://hutaox.com/blog/2020/07/16/autossh-on-pi/autossh-on-pi.jpg">
+<meta property="og:image" content="https://hutaox.com/blog/2020/07/15/autossh-on-pi/autossh-on-pi.jpg">
 <meta property="article:published_time" content="2020-07-15T16:18:26.000Z">
 <meta property="article:modified_time" content="2020-07-16T01:22:00.000Z">
 <meta property="article:author" content="古月瘦水">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://hutaox.com/blog/2020/07/16/autossh-on-pi/autossh-on-pi.jpg">
+<meta name="twitter:image" content="https://hutaox.com/blog/2020/07/15/autossh-on-pi/autossh-on-pi.jpg">
 
 
-<link rel="canonical" href="https://hutaox.com/blog/2020/07/16/autossh-on-pi/">
+<link rel="canonical" href="https://hutaox.com/blog/2020/07/15/autossh-on-pi/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://hutaox.com/blog/2020/07/16/autossh-on-pi/","path":"/blog/2020/07/16/autossh-on-pi/","title":"通过云主机远程登录（ssh）树莓派"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://hutaox.com/blog/2020/07/15/autossh-on-pi/","path":"/blog/2020/07/15/autossh-on-pi/","title":"通过云主机远程登录（ssh）树莓派"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>通过云主机远程登录（ssh）树莓派 | 积跬步</title>
@@ -181,7 +181,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hutaox.com/blog/2020/07/16/autossh-on-pi/">
+    <link itemprop="mainEntityOfPage" href="https://hutaox.com/blog/2020/07/15/autossh-on-pi/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/avatar.jpg">
@@ -238,7 +238,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h4 id="一、实现步骤概览"><a href="#一、实现步骤概览" class="headerlink" title="一、实现步骤概览"></a>一、实现步骤概览</h4><img src="/blog/2020/07/16/autossh-on-pi/autossh-on-pi.jpg" class="" title="实现概览">
+    <div class="post-body" itemprop="articleBody"><h4 id="一、实现步骤概览"><a href="#一、实现步骤概览" class="headerlink" title="一、实现步骤概览"></a>一、实现步骤概览</h4><img src="/blog/2020/07/15/autossh-on-pi/autossh-on-pi.jpg" class="" title="实现概览">
 
 <span id="more"></span>
 
@@ -246,27 +246,23 @@
 <h4 id="二、实现步骤具体操作"><a href="#二、实现步骤具体操作" class="headerlink" title="二、实现步骤具体操作"></a>二、实现步骤具体操作</h4><h5 id="1-安装-autossh-（树莓派端）"><a href="#1-安装-autossh-（树莓派端）" class="headerlink" title="1. 安装 autossh （树莓派端）"></a>1. 安装 autossh （树莓派端）</h5><p><code>sudo apt-get install autossh</code></p>
 <h5 id="2-生成ssh-key，开启免密登录（树莓派端）"><a href="#2-生成ssh-key，开启免密登录（树莓派端）" class="headerlink" title="2. 生成ssh-key，开启免密登录（树莓派端）"></a>2. 生成ssh-key，开启免密登录（树莓派端）</h5><p>2.1 生成 key</p>
  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
-
-<p> 输入以上命令，然后一路<code>Enter</code>，最后会在 ~/.ssh/ 下生成key。</p>
+<p> 输入以上命令，然后一路<code>Enter</code>，最后会在 ~&#x2F;.ssh&#x2F; 下生成key。</p>
 <p> 2.2 拷贝到云主机</p>
  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id -i username@云主机-ip</span><br></pre></td></tr></table></figure>
-
 <p> 2.3 拷贝public key，以备后续使用。</p>
  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub </span><br></pre></td></tr></table></figure>
-
 <p> 选择、复制。</p>
 <h5 id="3-配置免密登录（云服务端）"><a href="#3-配置免密登录（云服务端）" class="headerlink" title="3. 配置免密登录（云服务端）"></a>3. 配置免密登录（云服务端）</h5><p>其实在第二步中拷贝 ssh key 到云应该就OK了，但在腾讯云主机上发现不行，需要在控制台手动添加ssh key，然后再绑定 key 到相应实例，此过程需要重启。</p>
 <h5 id="4-测试能否通过ssh-免密登陆云主机（树莓派端）"><a href="#4-测试能否通过ssh-免密登陆云主机（树莓派端）" class="headerlink" title="4. 测试能否通过ssh 免密登陆云主机（树莓派端）"></a>4. 测试能否通过ssh 免密登陆云主机（树莓派端）</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh username@云主机-ip </span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>如果能免密登录，则进行后续操作，否则查找原因，直到能正常登录为止。</p>
-<h5 id="5-安装-autossh-守护进程服务-树莓派端）"><a href="#5-安装-autossh-守护进程服务-树莓派端）" class="headerlink" title="5. 安装 autossh 守护进程服务 (树莓派端）"></a>5. 安装 autossh 守护进程服务 (树莓派端）</h5><p> 下载已经整理好的的脚本（<a target="_blank" rel="noopener" href="https://github.com/hutao-fmtech/autossh-on-pi.git">Github地址</a>），修改里面的云主机 username 和 IP， 然后 <code>sudo ./install.sh</code> 安装服务。</p>
+<h5 id="5-安装-autossh-守护进程服务-树莓派端）"><a href="#5-安装-autossh-守护进程服务-树莓派端）" class="headerlink" title="5. 安装 autossh 守护进程服务 (树莓派端）"></a>5. 安装 autossh 守护进程服务 (树莓派端）</h5><p> 下载已经整理好的的脚本（<a target="_blank" rel="noopener" href="https://github.com/hutao-fmtech/autossh-on-pi.git">Github地址</a>），修改里面的云主机 username 和 IP， 然后 <code>sudo ./install.sh </code> 安装服务。</p>
 <p> 下面重点介绍下 <code>autosshd.sh</code>脚本，代码如下：</p>
  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"> #!/bin/bash</span><br><span class="line"></span><br><span class="line">device_id=$(cat /etc/ble-ap/bytedance-ap.conf | grep devicename | awk -F &quot;BDAFM&quot; &#x27;&#123;print $2&#125;&#x27;)</span><br><span class="line">port_offs=$((16#$device_id))</span><br><span class="line"></span><br><span class="line">let &quot;local_port=port_offs+10000&quot;</span><br><span class="line">let &quot;remote_port=port_offs+20000&quot;</span><br><span class="line"></span><br><span class="line">echo $local_port</span><br><span class="line">echo $remote_port</span><br><span class="line"></span><br><span class="line">killall autossh</span><br><span class="line"></span><br><span class="line">/bin/su -c &quot;/usr/bin/autossh -M $local_port -o &quot;ExitOnForwardFailure=yes&quot; -NR $remote_port:localhost:22 root@111.231.221.20&quot; - pi</span><br><span class="line"></span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure>
 
 <p> <code>-M $local_port</code> 参数为本机（树莓派）监视ssh状态的端口。<br> <code>$remote_port:localhost:22</code> 是把云主机的端口（rmote_port ）映射到本机（树莓派）的 22 端口，即 ssh 端口。</p>
 <p>  如果没有使用配置文件可以直接填写端口值就OK了，如：</p>
   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/su -c &quot;/usr/bin/autossh -M 12020 -o &quot;ExitOnForwardFailure=yes&quot; -NR 120201:localhost:22 root@111.231.221.20&quot; - pi</span><br></pre></td></tr></table></figure>
-
 <h5 id="6-远程登录树莓派"><a href="#6-远程登录树莓派" class="headerlink" title="6. 远程登录树莓派"></a>6. 远程登录树莓派</h5><p>6.1 使用任意 PC 登录云主机<br>6.2 在云主机里使用 <code>ssh -p 120201 pi@localhost</code></p>
 <blockquote>
 <p>注：为了避免每次密码也可以将云主机的key，ssh-copy-id到树莓派（参考前面第二步）。</p>

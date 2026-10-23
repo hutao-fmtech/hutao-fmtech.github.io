@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.2">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"hutaox.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.29.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"hutaox.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.29.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
     <meta name="description" content="高拓 SDK Linux 环境下编译问题解决debug 过程  编译app_wifi_cmd.c 出现 execv: No such file or directory，开始以为是 Makefile 问题，后面核对了下Makefile，没看到问题。">
 <meta property="og:type" content="article">
@@ -242,33 +242,33 @@
     
     <div class="post-body" itemprop="articleBody"><h1 id="高拓-SDK-Linux-环境下编译问题解决"><a href="#高拓-SDK-Linux-环境下编译问题解决" class="headerlink" title="高拓 SDK Linux 环境下编译问题解决"></a>高拓 SDK Linux 环境下编译问题解决</h1><p><strong>debug 过程</strong></p>
 <ol>
-<li>编译app_wifi_cmd.c 出现 <code>execv: No such file or directory</code>，开始以为是 Makefile 问题，后面核对了下Makefile，没看到问题。<img src="/blog/2020/11/24/%E9%AB%98%E6%8B%93-SDK-%E5%9C%A8-Linux-%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/16059379532441.jpg" class="">
-
-</li>
+<li>编译app_wifi_cmd.c 出现 <code>execv: No such file or directory</code>，开始以为是 Makefile 问题，后面核对了下Makefile，没看到问题。</li>
 </ol>
+<img src="/blog/2020/11/24/%E9%AB%98%E6%8B%93-SDK-%E5%9C%A8-Linux-%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/16059379532441.jpg" class="">
+
 <span id="more"></span>
 
 <ol>
-<li>接着怀疑是 <code>nds32le-elf/bin/as</code>不存在，但执行<code>ls -alh /opt/nds32le-elf-mculib-v3/bin/../lib/gcc/nds32le-elf/4.9.3/../../../../nds32le-elf/bin/as</code>，发现文件是存在的。<img src="/blog/2020/11/24/%E9%AB%98%E6%8B%93-SDK-%E5%9C%A8-Linux-%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/16059385766126.jpg" class="">
-
-
-</li>
+<li>接着怀疑是 <code>nds32le-elf/bin/as</code>不存在，但执行<code>ls -alh /opt/nds32le-elf-mculib-v3/bin/../lib/gcc/nds32le-elf/4.9.3/../../../../nds32le-elf/bin/as</code>，发现文件是存在的。</li>
 </ol>
+<img src="/blog/2020/11/24/%E9%AB%98%E6%8B%93-SDK-%E5%9C%A8-Linux-%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/16059385766126.jpg" class="">
+
+
 <ol>
-<li><p>猜测是这个文件无法执行。为了验证，直接执行<code>as --version</code>，发现是可以显示版本的，但执行<code>/opt/nds32le-elf-mculib-v3/bin/../lib/gcc/nds32le-elf/4.9.3/../../../../nds32le-elf/bin/as</code>, 也显示 <code>execv: No such file or directory</code>，基本确定是<code>/nds32le-elf/bin/as</code> 无法执行。</p>
+<li>猜测是这个文件无法执行。为了验证，直接执行<code>as --version</code>，发现是可以显示版本的，但执行<code>/opt/nds32le-elf-mculib-v3/bin/../lib/gcc/nds32le-elf/4.9.3/../../../../nds32le-elf/bin/as</code>, 也显示 <code>execv: No such file or directory</code>，基本确定是<code>/nds32le-elf/bin/as</code> 无法执行。</li>
+</ol>
 <img src="/blog/2020/11/24/%E9%AB%98%E6%8B%93-SDK-%E5%9C%A8-Linux-%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/16059387428081.jpg" class="">
-</li>
-<li><p>执行<code>file /opt/nds32le-elf-mculib-v3/bin/../lib/gcc/nds32le-elf/4.9.3/../../../../nds32le-elf/bin/as</code>查看<code>/nds32le-elf/bin/as</code>文件格式。发现是动态连接的，基本可以确定是少了某种连接库引起的。</p>
+
+<ol>
+<li>执行<code>file /opt/nds32le-elf-mculib-v3/bin/../lib/gcc/nds32le-elf/4.9.3/../../../../nds32le-elf/bin/as</code>查看<code>/nds32le-elf/bin/as</code>文件格式。发现是动态连接的，基本可以确定是少了某种连接库引起的。</li>
+</ol>
 <img src="/blog/2020/11/24/%E9%AB%98%E6%8B%93-SDK-%E5%9C%A8-Linux-%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/16059388258724.jpg" class="">
-</li>
-<li><p><code>find /lib -name ld-linux.so.2</code>在Linux上查找ld-linux.so.2，果然没有。</p>
-</li>
-<li><p>Google 搜索<code>ubuntu install ld-linux.so.2</code>, 发现一个有用<a target="_blank" rel="noopener" href="https://support.eset.com/en/kb5827-installation-error-eset-nod32-for-linux-needs-the-following-packages-to-install-libc6-i386-libld-linuxso2-with-eset-nod32-antivirus-4-for-linux-desktop">链接</a>。根据文章内容，执行<code>sudo apt-get install libc6-i386</code>。</p>
-</li>
-<li><p>在SDK根目录再次尝试编译<code>make all</code>，发现提示缺少<code>libz.so.1</code>，继续 Google <code>libz.so.1</code>，发现一个有用<a target="_blank" rel="noopener" href="https://blog.csdn.net/u011784994/article/details/52312200">链接</a>。按照提示，安装<code>sudo apt-get install lib32z1</code>。</p>
-</li>
-<li><p>再次尝试编译，编译通过。</p>
-</li>
+
+<ol>
+<li><code>find /lib -name ld-linux.so.2</code>在Linux上查找ld-linux.so.2，果然没有。</li>
+<li>Google 搜索<code>ubuntu install ld-linux.so.2</code>, 发现一个有用<a target="_blank" rel="noopener" href="https://support.eset.com/en/kb5827-installation-error-eset-nod32-for-linux-needs-the-following-packages-to-install-libc6-i386-libld-linuxso2-with-eset-nod32-antivirus-4-for-linux-desktop">链接</a>。根据文章内容，执行<code>sudo apt-get install libc6-i386</code>。</li>
+<li>在SDK根目录再次尝试编译<code>make all</code>，发现提示缺少<code>libz.so.1</code>，继续 Google <code>libz.so.1</code>，发现一个有用<a target="_blank" rel="noopener" href="https://blog.csdn.net/u011784994/article/details/52312200">链接</a>。按照提示，安装<code>sudo apt-get install lib32z1</code>。</li>
+<li>再次尝试编译，编译通过。</li>
 </ol>
 <p><strong>总结：</strong></p>
 <ol>

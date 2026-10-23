@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.2">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"hutaox.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.29.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"hutaox.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.29.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
     <meta name="description" content="最近在准备面试，复习以前的一些知识，在网上查找资料时发现很多使用很多博文都是 GithubPages 上的，而且整个博客界面都非常简单实用。搜索一番发现这些都是通过 Hexo + Next 主题构建的，故决定自己也搭建一个玩玩，一来可以记录自己所学内容、加深印象，二来相较于单纯的写笔记更有乐趣。">
 <meta property="og:type" content="article">
@@ -29,8 +29,8 @@
 <meta property="article:published_time" content="2020-07-07T02:47:48.000Z">
 <meta property="article:modified_time" content="2020-07-09T02:47:48.000Z">
 <meta property="article:author" content="古月瘦水">
-<meta property="article:tag" content="hexo">
 <meta property="article:tag" content="GithubPages">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
 
 
@@ -259,14 +259,14 @@
 
 <h3 id="基础环境搭建"><a href="#基础环境搭建" class="headerlink" title="基础环境搭建"></a>基础环境搭建</h3><p>所有的操作都是基于 macOS CataLina 10.15.5 环境，且已经安装 brew 包管理工具，如果执行过程出现异常，请自行搜索解决。</p>
 <ol>
-<li><p>安装 nodejs<br><code>brew install node</code></p>
-<p>安装完成后，执行<code>node -v</code>，可发现当前 nodejs 的版本为 14.4.0</p>
+<li>安装 nodejs<br><code>brew install node</code></li>
+</ol>
+<p>  安装完成后，执行<code>node -v</code>，可发现当前 nodejs 的版本为 14.4.0</p>
 <blockquote>
 <p>v14.4.0</p>
 </blockquote>
-</li>
-<li><p>安装 Hexo<br><code>npm install -g hexo-cli</code></p>
-</li>
+<ol start="2">
+<li>安装 Hexo<br><code>npm install -g hexo-cli</code></li>
 </ol>
 <h3 id="Hexo-配置部分"><a href="#Hexo-配置部分" class="headerlink" title="Hexo 配置部分"></a>Hexo 配置部分</h3><h4 id="Hexo-中的基本概念"><a href="#Hexo-中的基本概念" class="headerlink" title="Hexo 中的基本概念"></a>Hexo 中的基本概念</h4><h4 id="Hexo-配置场景问题"><a href="#Hexo-配置场景问题" class="headerlink" title="Hexo 配置场景问题"></a>Hexo 配置场景问题</h4><ol>
 <li>如果将博客放在一个单独的目录里，而不是按年分类?</li>
@@ -291,7 +291,7 @@
             <div class="post-nav-item">
             </div>
             <div class="post-nav-item">
-                <a href="/blog/2020/07/16/autossh-on-pi/" rel="next" title="通过云主机远程登录（ssh）树莓派">
+                <a href="/blog/2020/07/15/autossh-on-pi/" rel="next" title="通过云主机远程登录（ssh）树莓派">
                   通过云主机远程登录（ssh）树莓派 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
