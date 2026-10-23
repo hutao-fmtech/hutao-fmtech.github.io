@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"hutaox.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.29.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="最近一段时间，我陆续记下了几句话： 不要把 AI 的输出能力，当成自己的能力。 深度思考，不是把一个问题想得更久。 遇到问题时，要复盘问题本身，而不是陷入自我否定。 今天做的事情，应该成为明天继续前进的基础。 它们看起来分别在谈 AI、思考、心态和长期主义。后来我发现，它们其实都在回答同一个问题：  当 AI 已经能替我完成越来越多工作，我到底怎样才算真的成长了？  这个问题没有看上去那么简单。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 能替你干活，但不能替你成长">
+<meta property="og:url" content="https://hutaox.com/blog/2026/10/23/ai-can-work-but-not-grow/index.html">
+<meta property="og:site_name" content="积跬步">
+<meta property="og:description" content="最近一段时间，我陆续记下了几句话： 不要把 AI 的输出能力，当成自己的能力。 深度思考，不是把一个问题想得更久。 遇到问题时，要复盘问题本身，而不是陷入自我否定。 今天做的事情，应该成为明天继续前进的基础。 它们看起来分别在谈 AI、思考、心态和长期主义。后来我发现，它们其实都在回答同一个问题：  当 AI 已经能替我完成越来越多工作，我到底怎样才算真的成长了？  这个问题没有看上去那么简单。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://hutaox.com/images/ai-growth/01-output-vs-growth-gpt-v2.png">
+<meta property="og:image" content="https://hutaox.com/images/ai-growth/02-human-ai-bridge-gpt-v2.png">
+<meta property="og:image" content="https://hutaox.com/images/ai-growth/03-growth-flywheel-gpt-v2.png">
+<meta property="article:published_time" content="2026-10-23T12:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-23T12:00:00.000Z">
+<meta property="article:author" content="古月瘦水">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="个人成长">
+<meta property="article:tag" content="反馈循环">
+<meta property="article:tag" content="工程师成长">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hutaox.com/images/ai-growth/01-output-vs-growth-gpt-v2.png">
+
+
+<link rel="canonical" href="https://hutaox.com/blog/2026/10/23/ai-can-work-but-not-grow/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://hutaox.com/blog/2026/10/23/ai-can-work-but-not-grow/","path":"/blog/2026/10/23/ai-can-work-but-not-grow/","title":"AI 能替你干活，但不能替你成长"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>AI 能替你干活，但不能替你成长 | 积跬步</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">积跬步</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%80%9C%E5%81%9A%E5%87%BA%E6%9D%A5%E4%BA%86%E2%80%9D%E4%B8%8D%E7%AD%89%E4%BA%8E%E2%80%9C%E5%AD%A6%E4%BC%9A%E4%BA%86%E2%80%9D"><span class="nav-text">“做出来了”不等于“学会了”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%BA%E7%9A%84%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%AD%A3%E5%9C%A8%E5%90%91%E4%B8%A4%E7%AB%AF%E7%A7%BB%E5%8A%A8"><span class="nav-text">人的工作，正在向两端移动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%B1%E5%BA%A6%E6%80%9D%E8%80%83%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%8A%8A%E9%97%AE%E9%A2%98%E6%83%B3%E5%BE%97%E6%9B%B4%E4%B9%85"><span class="nav-text">深度思考，不是把问题想得更久</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%8A%E6%AF%8F%E4%B8%AA%E4%BB%BB%E5%8A%A1%E5%8F%98%E6%88%90%E4%B8%80%E8%BD%AE%E8%AE%AD%E7%BB%83"><span class="nav-text">把每个任务变成一轮训练</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E9%A6%88%E8%83%BD%E4%B8%8D%E8%83%BD%E5%8F%91%E7%94%9F%EF%BC%8C%E8%BF%98%E5%8F%96%E5%86%B3%E4%BA%8E%E6%BF%80%E5%8A%B1"><span class="nav-text">反馈能不能发生，还取决于激励</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99%E6%AC%A1%E5%B7%A5%E4%BD%9C%E6%9C%89%E6%B2%A1%E6%9C%89%E7%95%99%E4%B8%8B%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-text">这次工作有没有留下什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-text">参考</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="古月瘦水"
+      src="/uploads/avatar.jpg">
+  <p class="site-author-name" itemprop="name">古月瘦水</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://hutaox.com/blog/2026/10/23/ai-can-work-but-not-grow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="古月瘦水">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="积跬步">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="AI 能替你干活，但不能替你成长 | 积跬步">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          AI 能替你干活，但不能替你成长
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-10-23 20:00:00" itemprop="dateCreated datePublished" datetime="2026-10-23T20:00:00+08:00">2026-10-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%80%9D%E8%80%83/" itemprop="url" rel="index"><span itemprop="name">思考</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.8k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>7 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>最近一段时间，我陆续记下了几句话：</p>
+<p>不要把 AI 的输出能力，当成自己的能力。</p>
+<p>深度思考，不是把一个问题想得更久。</p>
+<p>遇到问题时，要复盘问题本身，而不是陷入自我否定。</p>
+<p>今天做的事情，应该成为明天继续前进的基础。</p>
+<p>它们看起来分别在谈 AI、思考、心态和长期主义。后来我发现，它们其实都在回答同一个问题：</p>
+<blockquote>
+<p><strong>当 AI 已经能替我完成越来越多工作，我到底怎样才算真的成长了？</strong></p>
+</blockquote>
+<p>这个问题没有看上去那么简单。</p>
+<p>写这篇文章的时候是 2026 年秋天。对工程师来说，用 AI 写方案、做网页、整理调研、搭一个小工具，已经从新鲜事变成默认工作方式。正因为协作足够日常，产出与能力的错位，也更容易被忽略。</p>
+<p>现在写一份方案、做一页网页、整理一篇调研，甚至完成一个小工具，都比以前容易得多。给 AI 一些 Context，再来回修改几轮，很快就能拿到一份像模像样的结果。</p>
+<p>但有时候，结果虽然做出来了，我却未必真的变强了。</p>
+<p>如果让我解释为什么采用这个方案，我可能说不清楚；让我判断里面最大的风险，我需要再问一遍 AI；换一个相邻的问题，我还是不知道从哪里开始。</p>
+<p>这时我得到的是一次不错的<strong>产出</strong>，却不一定获得了可以带走的<strong>能力</strong>。</p>
+<span id="more"></span>
+
+<h2 id="“做出来了”不等于“学会了”"><a href="#“做出来了”不等于“学会了”" class="headerlink" title="“做出来了”不等于“学会了”"></a>“做出来了”不等于“学会了”</h2><p>过去，一个工程师想完成一项工作，通常要亲手查资料、读文档、写代码、调试和修改。这个过程很慢，却会迫使人不断接触现实反馈：编译器报错、测试失败、性能不达标、用户觉得不好用。</p>
+<p>现在，中间大量执行工作都可以交给 AI。速度确实快了，但原来夹在执行过程里的思考和反馈，也可能一起被跳过去。</p>
+<p>我把这种情况叫作“能力幻觉”：<strong>系统完成了任务，我却误以为是自己掌握了能力。</strong></p>
+<p>怎么判断一次 AI 协作有没有真正变成自己的成长？我现在会问自己三个问题：</p>
+<ol>
+<li>我能不能解释，为什么最后选择了这个方案？</li>
+<li>我能不能识别，结果中可能存在的错误、风险和取舍？</li>
+<li>换一个相邻问题，我能不能复用这次获得的方法？</li>
+</ol>
+<p>如果三个问题都答不上来，那么这次合作可能完成了任务，却没有完成学习。</p>
+<p>这不意味着应该少用 AI，更不是说凡事必须重新手搓一遍。恰恰相反，AI 越强，我们越应该把可以外包的执行交出去。</p>
+<p>但需要区分两件事：</p>
+<blockquote>
+<p><strong>思维过程可以外包，理解和责任不能外包。</strong></p>
+</blockquote>
+<p>AI 可以帮我推演、编码、搜索和评估，但系统为什么这样设计、边界在哪里、什么情况下会失败，以及我为什么愿意接受这个结果，最终仍然要由我掌握。</p>
+<p>否则，我们只是从“亲手做但速度慢”，变成了“产出很多但无法判断”。</p>
+<p><img src="/images/ai-growth/01-output-vs-growth-gpt-v2.png" alt="做出来了，不等于学会了"></p>
+<h2 id="人的工作，正在向两端移动"><a href="#人的工作，正在向两端移动" class="headerlink" title="人的工作，正在向两端移动"></a>人的工作，正在向两端移动</h2><p>宝玉整理腾讯学堂的一次分享时，提到一句我很认同的话：</p>
+<blockquote>
+<p><strong>验证题交给 Agent，判断题留给人。</strong></p>
+</blockquote>
+<p>我理解这里的“判断题”，主要集中在工作的两端。</p>
+<p>第一端是<strong>定义问题</strong>。</p>
+<p>这个问题值得解决吗？真正的用户是谁？我们要的是一个 Demo，还是一个能够长期运行的系统？哪些是硬约束，哪些只是过去形成的习惯？</p>
+<p>如果问题一开始就定义错了，AI 只会更快地把错误方向做得更完整。</p>
+<p>另一端是<strong>验收结果</strong>。</p>
+<p>功能跑通就算完成，还是还要看性能、安全、成本和维护性？结果看起来合理，证据是否充分？哪些失败可以回滚，哪些错误会产生物理后果？</p>
+<p>AI 可以执行检查，但“什么值得检查”“什么结果可以接受”，仍然需要人作出判断。</p>
+<p>这也在改变工程师的角色。</p>
+<p>代码实现的门槛下降以后，工程师不会因此变得不重要，但能力的重心会发生变化：从单纯的功能实现者，逐渐变成场景定义者、系统拆解者、结果验收者和方法沉淀者。</p>
+<p>底层技术能力当然仍然重要。没有对系统的理解，就无法判断 AI 写出的代码是否可靠。只是我们不能再把“亲手写了多少代码”当成唯一的能力证明。</p>
+<p>真正更难的问题变成了：</p>
+<ul>
+<li>你能不能找到值得解决的问题？</li>
+<li>能不能把它拆成 AI 可以执行、系统可以验证的结构？</li>
+<li>能不能建立清楚的完成标准？</li>
+<li>最后能不能为结果负责？</li>
+</ul>
+<p>尤其是嵌入式、基础设施、安全和隐私相关的工作，人不逐行执行，不等于人不再负责。</p>
+<p>低风险、可回滚的任务，可以更多依靠自动测试和黑盒验收；涉及硬件副作用、数据安全或不可逆操作时，就必须按风险建立证据链。减少人肉操作没有问题，减少可验证性就危险了。</p>
+<p><img src="/images/ai-growth/02-human-ai-bridge-gpt-v2.png" alt="人的工作，正在向两端移动"></p>
+<h2 id="深度思考，不是把问题想得更久"><a href="#深度思考，不是把问题想得更久" class="headerlink" title="深度思考，不是把问题想得更久"></a>深度思考，不是把问题想得更久</h2><p>当定义问题和验收结果变得更重要，我们自然会谈到“深度思考”。</p>
+<p>但很多所谓的深度思考，只是把一个问题反复想、补充更多细节，或者堆上更多模型和概念。过程很辛苦，最后却没有形成可以行动的判断。</p>
+<p>我最近越来越觉得，深度思考不是让问题显得更复杂，而是穿过表面现象，找到关键变量、因果机制和可以验证的行动。</p>
+<p>比如一个项目延期了。</p>
+<p>最直接的解释可能是：“大家执行力不够。”</p>
+<p>但这句话既不是事实，也没有办法指导行动。再往下追问，会出现完全不同的问题：</p>
+<ul>
+<li>延期发生在需求、拆解、编码、验证还是协同？</li>
+<li>为什么风险没有提前暴露？</li>
+<li>是过程不可观测、责任不明确，还是反馈周期太长？</li>
+<li>高能力成员是否也遭遇了相同的阻塞？</li>
+<li>如果不换人，只改变系统，能不能避免下一次延期？</li>
+</ul>
+<p>追问到这里，问题可能从“怎样提高大家的执行力”，变成了：</p>
+<blockquote>
+<p>当前交付系统无法在编码前识别跨模块接口和验证风险，导致问题集中到联调阶段暴露。</p>
+</blockquote>
+<p>两个问题会导向完全不同的行动。</p>
+<p>前一个问题容易导向开会、督促和加班；后一个问题则可能导向接口契约检查、测试前置、责任边界和更短的反馈周期。</p>
+<p>我现在尝试把深度思考压缩成六个动作：</p>
+<ol>
+<li><strong>事实</strong>：先写可以被验证的事实，不把评价当成事实。</li>
+<li><strong>问题</strong>：重新定义真正需要解决的问题。</li>
+<li><strong>结构</strong>：找出少数关键变量以及它们之间的关系。</li>
+<li><strong>假设</strong>：明确自己的判断依赖哪些条件。</li>
+<li><strong>反证</strong>：写出最强的反方解释，并设计最小实验。</li>
+<li><strong>决策</strong>：形成一个带条件、可以修正的行动。</li>
+</ol>
+<p>最后最好能够写成一句话：</p>
+<blockquote>
+<p>因为 A，在条件 B 下导致 C；因此先做 D，通过指标 E 验证；如果出现 F，就修改原来的判断。</p>
+</blockquote>
+<p>这个表达不一定漂亮，但它很有用。它让观点不再是一句正确的口号，而是变成可以被现实检验的判断。</p>
+<p>AI 可以参与这六个环节，帮助我们列出事实、发现遗漏、构造反方和设计实验。但最终选择相信哪条因果链、接受什么风险，仍然是人的工作。</p>
+<h2 id="把每个任务变成一轮训练"><a href="#把每个任务变成一轮训练" class="headerlink" title="把每个任务变成一轮训练"></a>把每个任务变成一轮训练</h2><p>如果成长不能靠“完成了多少任务”来衡量，那应该怎样发生？</p>
+<p>我目前给自己的答案是：<strong>不要只完成任务，要让每个任务都形成一轮反馈。</strong></p>
+<p>我把接收和完成任务的过程概括成四步：</p>
+<blockquote>
+<p><strong>价值 → 设计 → 交付 → 复制</strong></p>
+</blockquote>
+<p>先看价值。</p>
+<p>接到任务，不要马上开始做。先问它真正要解决什么问题、创造什么价值、最后怎样才算完成。如果长期接收的都是低价值任务，就应该主动质疑问题边界，而不是把低价值工作做得越来越熟练。</p>
+<p>再看设计。</p>
+<p>如果原来的结构无法支撑核心目标，就不能一直在上面修修补补。当然，“推翻重来”也不是为了追求完美，而是在继续修补的累计成本已经高于重新设计时，敢于回到核心约束重新选择方案。</p>
+<p>然后是交付。</p>
+<p>不是做到“差不多”，也不是留下一个半拉子工程，而是做到真正可验收。只有结果进入真实环境，我们才能得到有效反馈。</p>
+<p>最后是复制。</p>
+<p>一次工作完成以后，留下了什么？是一份只能汇报一次的材料，还是一张 Checklist、一个模板、一项自动测试、一个 Skill，或者一个能被团队继续使用的工具？</p>
+<p>把它和 AI 协作放在一起，大概是这样一个循环：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">定义价值</span><br><span class="line">  ↓</span><br><span class="line">人做判断，AI 做执行</span><br><span class="line">  ↓</span><br><span class="line">按照明确标准验收</span><br><span class="line">  ↓</span><br><span class="line">接收真实反馈</span><br><span class="line">  ↓</span><br><span class="line">复盘事实、假设与偏差</span><br><span class="line">  ↓</span><br><span class="line">沉淀成下一次可以复用的资产</span><br><span class="line">  ↓</span><br><span class="line">进入一个更难的问题</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/ai-growth/03-growth-flywheel-gpt-v2.png" alt="把每个任务变成一轮训练"></p>
+<p>我以前很喜欢一句话：“沿着目标，日拱一卒。”</p>
+<p>现在我觉得，“日拱一卒”并不只是每天做一点。更重要的是，<strong>今天的成果要能成为明天的基础。</strong></p>
+<p>如果每天都很忙，每个项目结束后经验也跟着归零，那只是重复消耗；如果一次实践沉淀成标准，标准变成工具，工具又在下一轮得到反馈和更新，日积月累才会产生真正的复利。</p>
+<h2 id="反馈能不能发生，还取决于激励"><a href="#反馈能不能发生，还取决于激励" class="headerlink" title="反馈能不能发生，还取决于激励"></a>反馈能不能发生，还取决于激励</h2><p>个人可以建立自己的成长 Loop，但一旦进入团队，事情就没那么简单了。</p>
+<p>一个团队嘴上说重视什么，并不重要。真正重要的是它在奖励什么、惩罚什么、考核什么。</p>
+<p>如果组织口头鼓励创新，实际只奖励按时交付，大家自然会选择最安全的方案。</p>
+<p>如果组织要求主动暴露问题，却总是在问题出现后追究“是谁的责任”，大家很快就会学会隐藏风险。</p>
+<p>如果团队只奖励救火的人，却不奖励提前消除隐患、沉淀工具的人，那么火只会越来越多，救火英雄也会越来越忙。</p>
+<p>所以我最近在思考带队伍时，越来越关注几件具体的事：</p>
+<ul>
+<li>评价真实贡献，而不是表面上的忙碌；</li>
+<li>允许成员重新定义问题，也允许带着证据提出反对意见；</li>
+<li>复盘目标、行为和机制，不把一次失败变成对人的否定；</li>
+<li>对真正创造价值的人，不只口头表扬，还要及时兑现认可和回报；</li>
+<li>不只奖励个人解决了问题，也奖励他把经验变成了团队可以复用的能力。</li>
+</ul>
+<p>这几件事看起来在讲管理，本质上仍然是在保护反馈循环。</p>
+<p>人只有愿意暴露真实问题，反馈才会出现；反馈能够指向具体行为而不是人格，人才愿意继续尝试；贡献和回报能够匹配，正确行为才有可能长期持续。</p>
+<h2 id="这次工作有没有留下什么？"><a href="#这次工作有没有留下什么？" class="headerlink" title="这次工作有没有留下什么？"></a>这次工作有没有留下什么？</h2><p>所以我现在会用一个很简单的问题检查自己：</p>
+<blockquote>
+<p><strong>这次我只是借 AI 把事情做完了，还是让下一次的自己变得更强了？</strong></p>
+</blockquote>
+<p>如果一项工作结束以后，我多了一个更清楚的判断、一条被验证的因果链、一份可以复用的 Checklist，或者一个能被团队继续使用的工具，那么这次工作才没有随着交付结束而归零。</p>
+<p>如果只是得到了一份看起来不错的输出，却不知道它为什么成立、在哪里会失败、下一次怎样做得更好，那我拥有的仍然只是一次结果。</p>
+<p>AI 可以替我走得更快。</p>
+<p>但往哪里走、怎样算到达，以及每一轮结束后留下什么，还是得由我自己负责。</p>
+<hr>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li>宝玉：腾讯学堂《AI 原生思维——像训练大模型一样训练自己》：<a target="_blank" rel="noopener" href="https://x.com/dotey/status/2094624092015992854">https://x.com/dotey/status/2094624092015992854</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/AI/" rel="tag"># AI</a>
+              <a href="/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/" rel="tag"># 个人成长</a>
+              <a href="/tags/%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%88%90%E9%95%BF/" rel="tag"># 工程师成长</a>
+              <a href="/tags/%E5%8F%8D%E9%A6%88%E5%BE%AA%E7%8E%AF/" rel="tag"># 反馈循环</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/2026/10/23/para-zettelkasten-pkm-practice/" rel="prev" title="从零搭建个人知识管理系统：我的 PARA + Zettelkasten 实践">
+                  <i class="fa fa-angle-left"></i> 从零搭建个人知识管理系统：我的 PARA + Zettelkasten 实践
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">古月瘦水</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">14k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">25 分钟</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
